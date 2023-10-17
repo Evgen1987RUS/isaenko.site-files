@@ -13,7 +13,7 @@ body {
 }
 
 div {
-    display: flex; /* TODO: check to see what happens on removal */
+    display: flex;
 }
 
 #dot_left {
@@ -80,7 +80,7 @@ div {
 
 /* filters are taken from https://codepen.io/sosuke/pen/Pjoqqp. This computates filters to change imgs into desired color */
 .contact_button img {
-    filter: invert(77%) sepia(0%) saturate(24%) hue-rotate(249deg) brightness(89%) contrast(83%); /* TODO: Choose a better color */ /* TODO: make it so the svgs themselves work as buttons */
+    filter: invert(77%) sepia(0%) saturate(24%) hue-rotate(249deg) brightness(89%) contrast(83%); 
     transition: 1s; /* smoothly transitions back once cursor is out of hover */
 }
 
@@ -94,5 +94,5 @@ div {
 /* reverts filters on hover */
 .contact_button:hover img{
     filter: none;
-    transition: 1s; /* TODO: make it so the color of the icon becomes default on hover */
+    transition: 1s;
 }

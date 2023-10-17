@@ -1,5 +1,4 @@
-import jquery from "./jquery";
-import confetti from "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js";
+import confetti from "https://esm.run/canvas-confetti@1";
 
 const easter_egg_left = document.getElementById('dot_left');
 const easter_egg_right = document.getElementById('dot_right');
