@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
-    margin-top: 100px;
-    background-color: rgb(211, 211, 211)
+    font-family: 'EB Garamond';
+    background-color: rgb(211, 211, 211);
 }
 
 * {
@@ -11,9 +13,29 @@ body {
 }
 
 div {
-    display: flex; /* TODO: check to see what happens on removal */
-    font-family: 'Gabrito'; /* FIXME: check whether font actually changes */
-    
+    display: flex;
+}
+
+#dot_left {
+    position: relative;
+    top: 13px;
+    right: 18px;
+    width: 5px;
+    height: 5px;
+    opacity: 100%;
+    overflow: visible;
+    cursor: default;
+}
+
+#dot_right {
+    position: relative;
+    top: 13px;
+    right: 13px;
+    width: 5px;
+    height: 5px;
+    opacity: 100%;
+    overflow: visible;
+    cursor: default;
 }
 
 #general_style {
@@ -27,6 +49,7 @@ div {
 }
 
 #username {
+    padding-top: 200px;
     display: flex;
     font-size: 40px;
     margin-bottom: 50px;
@@ -36,13 +59,44 @@ div {
     background-color: yellow;
 }
 
-#contact_list {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
+#contact {
+    margin-bottom: 0;
 }
 
-@font-face {
-    font-family: 'Gabarito';
-    src: url('fonts\Gabarito-VariableFont_wght.ttf');
+#contact_box {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 0px;
+    flex-direction: row;
+    border-color: rgb(184, 184, 184);
+}
+
+#contact_box li {
+    list-style: none;
+}
+
+.contact_button {
+    background-color: rgb(211, 211, 211);
+    padding-top: 10px;
+    padding-right: 30px;
+    border: 0px;
+}
+
+/* filters are taken from https://codepen.io/sosuke/pen/Pjoqqp. This computates filters to change imgs into desired color */
+.contact_button img {
+    filter: invert(77%) sepia(0%) saturate(24%) hue-rotate(249deg) brightness(89%) contrast(83%); 
+    transition: 1s; /* smoothly transitions back once cursor is out of hover */
+}
+
+/* uncomment if background of buttons should be visible */
+/*
+.contact_button:hover{
+    background-color: darken;
+}
+*/
+
+/* reverts filters on hover */
+.contact_button:hover img{
+    filter: none;
+    transition: 1s;
 }
