@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
-    margin-top: 100px;
+    font-family: 'EB Garamond';
     background-color: rgb(211, 211, 211);
 }
 
@@ -12,8 +14,24 @@ body {
 
 div {
     display: flex; /* TODO: check to see what happens on removal */
-    font-family: 'Gabrito'; /* FIXME: check whether font actually changes */
-    
+}
+
+#dot_left {
+    position: relative;
+    top: 13px;
+    right: 18px;
+    width: 5px;
+    height: 5px;
+    opacity: 100%;
+}
+
+#dot_right {
+    position: relative;
+    top: 13px;
+    right: 13px;
+    width: 5px;
+    height: 5px;
+    opacity: 100%;
 }
 
 #general_style {
@@ -27,6 +45,7 @@ div {
 }
 
 #username {
+    padding-top: 200px;
     display: flex;
     font-size: 40px;
     margin-bottom: 50px;
@@ -42,7 +61,7 @@ div {
 
 #contact_box {
     display: flex;
-    padding: 10px;
+    padding-top: 30px;
     padding-left: 0px;
     flex-direction: row;
     border-color: rgb(184, 184, 184);
@@ -76,9 +95,4 @@ div {
 .contact_button:hover img{
     filter: none;
     transition: 1s; /* TODO: make it so the color of the icon becomes default on hover */
-}
-
-@font-face {
-    font-family: 'Gabarito';
-    src: url('fonts/Gabarito-VariableFont_wght.ttf');
 }
