@@ -1,6 +1,6 @@
 body {
     margin-top: 100px;
-    background-color: rgb(211, 211, 211)
+    background-color: rgb(211, 211, 211);
 }
 
 * {
@@ -36,13 +36,49 @@ div {
     background-color: yellow;
 }
 
-#contact_list {
+#contact {
+    margin-bottom: 0;
+}
+
+#contact_box {
     display: flex;
+    padding: 10px;
+    padding-left: 0px;
     flex-direction: row;
-    margin: auto;
+    border-color: rgb(184, 184, 184);
+}
+
+#contact_box li {
+    list-style: none;
+}
+
+.contact_button {
+    background-color: rgb(211, 211, 211);
+    padding-top: 10px;
+    padding-right: 30px;
+    border: 0px;
+}
+
+/* filters are taken from https://codepen.io/sosuke/pen/Pjoqqp. This computates filters to change imgs into desired color */
+.contact_button img {
+    filter: invert(77%) sepia(0%) saturate(24%) hue-rotate(249deg) brightness(89%) contrast(83%); /* TODO: Choose a better color */ /* TODO: make it so the svgs themselves work as buttons */
+    transition: 1s; /* smoothly transitions back once cursor is out of hover */
+}
+
+/* uncomment if background of buttons should be visible */
+/*
+.contact_button:hover{
+    background-color: darken;
+}
+*/
+
+/* reverts filters on hover */
+.contact_button:hover img{
+    filter: none;
+    transition: 1s; /* TODO: make it so the color of the icon becomes default on hover */
 }
 
 @font-face {
     font-family: 'Gabarito';
-    src: url('fonts\Gabarito-VariableFont_wght.ttf');
+    src: url('fonts/Gabarito-VariableFont_wght.ttf');
 }
