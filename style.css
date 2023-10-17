@@ -23,6 +23,8 @@ div {
     width: 5px;
     height: 5px;
     opacity: 100%;
+    overflow: visible;
+    cursor: default;
 }
 
 #dot_right {
@@ -32,6 +34,8 @@ div {
     width: 5px;
     height: 5px;
     opacity: 100%;
+    overflow: visible;
+    cursor: default;
 }
 
 #general_style {
