@@ -1,0 +1,48 @@
+body {
+    margin-top: 100px;
+    background-color: rgb(211, 211, 211)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    padding-left: 0%;
+}
+
+div {
+    display: flex; /* TODO: check to see what happens on removal */
+    font-family: 'Gabrito'; /* FIXME: check whether font actually changes */
+    
+}
+
+#general_style {
+    width: fit-content;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#general_style > * {
+    margin-bottom: 30px;
+}
+
+#username {
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.gen_highlight {
+    background-color: yellow;
+}
+
+#contact_list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('fonts\Gabarito-VariableFont_wght.ttf');
+}
